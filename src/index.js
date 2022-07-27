@@ -2,7 +2,10 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
-  /*function towelSort(matrix) {*/
+    console.log(matrix);
+  if (matrix === undefined || matrix.length === 0) {
+    return [];
+  }
   let lines = matrix.length;
   let columns = matrix[0].length;
   let mass = [];
@@ -15,9 +18,3 @@ module.exports = function towelSort (matrix) {
   }
   return mass;
 }
-towelSort ([
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-  [9, 6, 4],
-  ]);
